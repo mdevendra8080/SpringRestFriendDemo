@@ -1,0 +1,326 @@
+SPRING REST - START DATE: 06/27/2020
+#######################################################
+
+INTRODUCTION
+-> What is REST ?
+	Representational State Transfer (REST), is an architectural style that defines a set of constraints and properties based on HTTP. 
+
+	Example : 
+
+	Webform send data in the form JSON to server where on java accept it in JSON and transform in data. Here Data is state and JSON is reprentational and transfer in the form of HTTP.	
+
+	Clinet - Server Architecture based on HTTP
+	Request - Response Model 
+	Universal Resource Locator (URL)
+	HTPP Verbs : GET, POST, PUT, DELETE
+	
+-> What is Spring ?
+	is an application framework and inversion of control container for the java platform.
+	
+	Enterprise Application Framework
+		Large set of Liberaries 
+			Spring boot - basic spring liberaries 
+			Spring MVC 
+			Spring Data 
+	
+	Spring Container : 
+		Life Cycle Management 
+		Dependency Injection
+		Build from Configuration
+			Annotations
+		Strength
+			Modularity
+			Extensibility
+			
+-> Getting Started 
+-->> Basic Messages 
+
+--------------------------------
+Demo : 
+Generate a Demo Project - 
+
+---------------------------------------------------
+
+Building the Freinds Web Service Demo :
+
+Project Phases 
+	Analysis
+	Design
+	Setup
+	Build
+		Iterations
+
+
+Problem statement : 
+	Wired Brain Friends.
+	"Wired Brain Coffee" is starting a loyalty program called "Wired Brain Friends". It is a friends database stored on a central server. The servr should be accessible via a REST API.
+
+Analysis - REST API :
+		Register new friend
+		FInd one or morwe friends 
+		Change a friend 
+		delete a friend 
+
+Design : 
+	MVC architecture 
+		Model : Friend 
+		View : ARC Plugin in google 
+		Controller - FriendController with Rest API 
+		Serivce - FriendService with CRUD
+
+Installation 
+	MySQL - dev.mysql.com/downloads/mysql
+	Maria DB - downloads.maria.db
+
+Build Architecture:
+		Model - Friend
+		Serice - FrienService
+		Controller : FriendController 
+
+
+--------------------------------------------------
+	
+Error Handling :
+
+Problem
+-> Why error handling ?
+	Database pollution
+	Client does not know 
+Solution
+-> Happy Path
+	Default Scenarios 
+-> Exception Paths 
+	Block write actions 
+	Send error message to cleint 
+
+Demo 
+-> PUT
+	
+-> POST
+-> Validation
+
+Spring classes 
+ResponseEntiry 
+ @Exceptionhandler 
+ ErrorMessage
+ 
+ @ControllerAdavice 
+ ErrorMessage
+ 
+Add Error Handling to create Method 
+
+- POST 
+--> Demo the problem 
+-- @ErrorHanlder method
+-- ErrorMessage class 
+
+-----
+
+Add @ControllerAdavice 
+	- Move @ErrorHanlder method 
+	- ErrorMessage class 
+
+-------------------------------
+
+Java Validation JSR-380 
+
+	Validation in Model
+	Constraints on Properties 
+	Add @Valid to input 
+	MethodArgumentNotValidException 
+	
+Validation Constrains 
+	@NotNull
+	@AssertTrue
+	@Min
+	@Max 
+	@Size 
+	@Digits
+	@Pattern - Reg Expr 
+	@NotEmpty 
+	@NotBlank no white space 
+	@Positive 
+	@Email 
+	@Past -Date 
+	@Future - Date 
+	
+Demo :
+
+Add validation to Friend class 
+- @NotBlank 
+
+In the Contoller Add 
+	@Valid 
+	@ExceptionHanlder 
+	MethodArgumentNotValidException
+
+-----------------------------
+Software Testing 
+	Why Testing ?
+	Testing Types ?
+	Testing Levels ?
+	
+	Demos :
+	-Writing Tests 
+		- Testing Levels 
+			- With Different Liberies 
+			
+
+Test Types 
+	Smoke & Sanity Testing 
+	Continuous Testing 
+	Regression Testing 
+	Performce Testing 
+	Acceptance Testing 
+	
+Testing Levels 
+	Unit Testing 
+	Integration Testing 
+	System Testing 
+	
+Spring Boot Test Libraries 
+	JUnit - De-facto Standard 
+	Spring Test - Spring Boot Test Support 
+	AssertJ - A Fluent Assertion Library 
+	Hamcrest - Matcher Objects 
+	JSONPath - XPath for JSON 
+	Mockito - Mocking Framework 
+	
+---------------
+
+Demo : 
+Test Pattern :
+
+1] Create new Friend 
+2] List All Friends 
+	- Assert if the Friends is in the List 
+3] Delete the friend 
+	- Asssert if the List is Empty 
+
+Smoke and Santity Testing - 
+	Assert if the Spring Context is Running 
+
+	Demo :
+	Spring Initializer includes a Test 
+	Asseert if the FriendController is Alive 
+
+---------------------
+
+Hateoas  ? 
+
+Hypermedia As The Engine Of Application State 
+is a component of the REST application architecture 
+
+
+	
+	
+	
+
+
+	
+	
+	
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+ 
+
+					
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Explanations
+
+
